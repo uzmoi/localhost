@@ -1,17 +1,23 @@
 {
+  "private": true,
   "name": "localhost",
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
+    "format": "prettier --check .",
     "dev": "astro dev",
-    "start": "astro dev",
+    "check": "cspell --no-progress . && astro check",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {
-    "astro": "^4.10.2",
+  "devDependencies": {
     "@astrojs/check": "^0.7.0",
+    "astro": "^4.10.2",
+    "bun-types": "^1.1.12",
+    "cspell": "^8.8.4",
+    "lefthook": "^1.6.15",
+    "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0",
     "typescript": "^5.4.5"
   }
 }

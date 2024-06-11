@@ -1,0 +1,9 @@
+
+[pre-commit]
+parallel = true
+
+[pre-commit.commands.prettier]
+run = "bun x prettier --check --ignore-unknown {staged_files}"
+
+[pre-commit.commands.cSpell]
+run = "bun x cspell lint --no-progress --no-must-find-files {staged_files}"

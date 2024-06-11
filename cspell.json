@@ -1,0 +1,14 @@
+{
+	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+	"useGitignore": true,
+	"ignorePaths": [".vscode", "bun.lockb"],
+	"words": [
+		"astro",
+		"astrojs",
+		"lefthook",
+		"lockb",
+		"Parens",
+		"tsconfigs",
+		"uzmoi"
+	]
+}
