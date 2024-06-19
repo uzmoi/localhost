@@ -10,8 +10,12 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "dependencies": {
+    "svelte": "^4.2.18"
+  },
   "devDependencies": {
     "@astrojs/check": "^0.7.0",
+    "@astrojs/svelte": "^5.5.0",
     "astro": "^4.10.2",
     "bun-types": "^1.1.12",
     "cspell": "^8.8.4",
