@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Blank">
+	<div id="blank-bg"></div>
+</Layout>
+
+<script>
+	const searchParams = new URLSearchParams(location.search);
+
+	const title = searchParams.get("title");
+	if (title) document.title = title;
+
+	const bgEl = document.getElementById("blank-bg")!;
+	bgEl.style.background = searchParams.get("bg") ?? "white";
+</script>
+
+<style>
+	#blank-bg {
+		width: 100vw;
+		height: 100vh;
+	}
+</style>
